@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333332 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="my_button_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="19.797294"
+     inkscape:cx="15.12833"
+     inkscape:cy="15.027306"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="font-weight:600;font-size:3.39381px;line-height:0.5;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold';font-variant-caps:all-small-caps;text-align:center;text-anchor:middle;white-space:pre;inline-size:6.1361;display:inline;fill:#bfbfbf;stroke-width:0.220022;stroke-linecap:square;stroke-miterlimit:4.01;paint-order:stroke fill markers"
+       d="M 0.9524997,1.7751774 1.1980333,2.8786675 H 1.5141225 L 1.7540117,1.7751774 V 2.8786675 H 2.1547676 V 1.3546659 H 1.6241893 L 1.3560779,2.5654005 1.0794999,1.3546659 H 0.55456597 V 2.8786675 H 0.9524997 Z M 3.1989891,2.3480891 3.6787674,1.3546659 H 3.261078 L 2.9986111,1.9699109 2.7135664,1.3546659 H 2.2958771 l 0.5051783,0.9934232 v 0.5305784 h 0.3979337 z"
+       id="path15" />
+    <rect
+       style="fill:none;stroke:#bfbfbf;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4.01;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect6"
+       width="3.6607406"
+       height="3.7996337"
+       x="0.28629637"
+       y="0.21684979"
+       ry="0.22056538" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:0;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';white-space:pre;inline-size:6.1361;display:none;fill:#bfbfbf;fill-opacity:1;stroke:#bfbfbf;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4.01;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="3.4200811"
+       y="1.0658752"
+       id="text6"
+       inkscape:label="text6"
+       transform="matrix(0.83158018,0,0,0.83158018,-3.2788598,1.3263152)"><tspan
+         x="3.4200811"
+         y="1.0658752"
+         id="tspan3"><tspan
+           style="font-size:2.54535px;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+           id="tspan1">My</tspan><tspan
+           style="font-size:1.41111px;line-height:0.5;font-family:FreeSans;-inkscape-font-specification:FreeSans;font-variant-caps:all-small-caps;text-align:center;text-anchor:middle;stroke:none"
+           id="tspan2">
+</tspan></tspan><tspan
+         x="3.4200811"
+         y="2.1407318"
+         id="tspan5"><tspan
+           style="font-weight:600;font-size:1.27268px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold'"
+           id="tspan4">Button</tspan></tspan></text>
+  </g>
+</svg>

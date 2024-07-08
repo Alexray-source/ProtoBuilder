@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfsrccbrd0b7d"]
+
+[ext_resource type="Script" path="res://addons/my_main_screen/graph_btn.gd" id="1_ycybm"]
+
+[node name="GridContainer" type="GraphEdit"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="GraphNode" type="GraphNode" parent="."]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 91.0
+offset_right = 254.0
+offset_bottom = 222.0
+mouse_filter = 1
+position_offset = Vector2(92, 91)
+title = "Graph"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+
+[node name="Button" type="Button" parent="GraphNode"]
+layout_mode = 2
+text = "Press me!"
+script = ExtResource("1_ycybm")

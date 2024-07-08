@@ -1,0 +1,154 @@
+[gd_scene load_steps=9 format=3 uid="uid://bcs474b60b6a7"]
+
+[ext_resource type="Script" path="res://addons/protobuilder/inspector_configuration.gd" id="1_isvrh"]
+[ext_resource type="ButtonGroup" uid="uid://cq5g3hgqq2gq3" path="res://addons/protobuilder/button_groups/draw_group.tres" id="2_jiko5"]
+[ext_resource type="Texture2D" uid="uid://c6tmvggwlhdd5" path="res://addons/protobuilder/icons/draw.svg" id="3_krsub"]
+[ext_resource type="PackedScene" uid="uid://cf4b5xxd878av" path="res://addons/protobuilder/scene_presets/vector_container.tscn" id="4_63li6"]
+[ext_resource type="Texture2D" uid="uid://dmqo25ykq376h" path="res://addons/protobuilder/icons/erase.svg" id="4_bklri"]
+[ext_resource type="Texture2D" uid="uid://blkippgfxq7h6" path="res://addons/protobuilder/icons/add.svg" id="6_yak73"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jyfmd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3oey"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_isvrh")
+metadata/_edit_vertical_guides_ = [-31.0]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_children = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Paint Settings"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DrawBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+toggle_mode = true
+button_pressed = true
+button_group = ExtResource("2_jiko5")
+text = "Draw"
+icon = ExtResource("3_krsub")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="EraseBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_jiko5")
+text = "Erase"
+icon = ExtResource("4_bklri")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Snap to grid"
+
+[node name="GridCheckBox" type="CheckBox" parent="VBoxContainer/HBoxContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+theme_override_styles/separator = SubResource("StyleBoxEmpty_jyfmd")
+
+[node name="RotationContainer" parent="VBoxContainer" instance=ExtResource("4_63li6")]
+unique_name_in_owner = true
+layout_mode = 2
+ContainerName = "Rotation"
+
+[node name="SizeContainer" parent="VBoxContainer" instance=ExtResource("4_63li6")]
+unique_name_in_owner = true
+layout_mode = 2
+ContainerName = "Scale"
+VectorValue = Vector3(1, 1, 1)
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+theme_override_styles/separator = SubResource("StyleBoxEmpty_jyfmd")
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Shortcut Settings"
+horizontal_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Rotation Increment"
+
+[node name="RotationIncrementBox" type="SpinBox" parent="VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+theme_override_styles/separator = SubResource("StyleBoxEmpty_c3oey")
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Objects"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 5
+
+[node name="AddObjectBtn" type="Button" parent="VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+text = "Add..."
+icon = ExtResource("6_yak73")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FileDialog" type="FileDialog" parent="VBoxContainer"]
+unique_name_in_owner = true
+title = "Open a File"
+size = Vector2i(392, 159)
+ok_button_text = "Open"
+file_mode = 0

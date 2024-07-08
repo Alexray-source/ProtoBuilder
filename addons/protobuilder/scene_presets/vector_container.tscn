@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf4b5xxd878av"]
+
+[ext_resource type="Script" path="res://addons/protobuilder/vector_container.gd" id="1_6l84p"]
+
+[node name="VectorContainer" type="HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+size_flags_horizontal = 4
+alignment = 1
+script = ExtResource("1_6l84p")
+VectorValue = Vector3(9.31313e-05, 9.31313e-05, 9.31313e-05)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 7
+text = "Vector"
+
+[node name="xRot" type="SpinBox" parent="."]
+layout_mode = 2
+size_flags_horizontal = 7
+min_value = -99999.0
+max_value = 99999.0
+step = 0.01
+
+[node name="yRot" type="SpinBox" parent="."]
+layout_mode = 2
+size_flags_horizontal = 7
+min_value = -99999.0
+max_value = 99999.0
+step = 0.01
+
+[node name="zRot" type="SpinBox" parent="."]
+layout_mode = 2
+size_flags_horizontal = 7
+min_value = -99999.0
+max_value = 99999.0
+step = 0.01
